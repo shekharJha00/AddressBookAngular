@@ -1,0 +1,38 @@
+<div class="home">
+    <div class="title-area">
+        <h2 class="text text-title">Person Details</h2>
+        <button class="button-add" routerLink="form" mat-raised-button>
+            <span class="text text-add-person">+ Add Person</span>
+        </button>
+    </div>
+    <table class="table">
+        <tr id= "head-row" class="head-row">
+            <th class="text-table text-fullname">Fullname</th>
+            <th class="text-table text-address">Address</th>
+            <th class="text-table text-city">City</th>
+            <th class="text-table text-state">State</th>
+            <th class="text-table text-zip">Zip Code</th>
+            <th class="text-table text-phone">Phone</th>
+            
+        </tr>
+        <tr class="data-row" *ngFor="let contact of contactList">
+            <td class="text-data text-data-first">{{contact.firstName}}</td>
+            <td class="text-data text-data-last">{{contact.lastName}}</td>
+            <td class="text-data text-data-address">{{contact.address}}</td>
+            <td class="text-data text-data-city">{{contact.city}}</td>
+            <td class="text-data text-data-state">{{contact.state}}</td>
+            <td class="text-data text-data-zip">{{contact.pin}}</td>
+            <td class="text-data text-data-phone">{{contact.phoneNo}}</td>
+            <td class="icons icon-delete">
+                <button mat-icon-button>
+                    <img src="../../../assets/delete-black-18dp.svg" alt="" id={{contact.id}} (click)="delete(contact.id)">
+                </button>
+            </td>
+            <td class="icons icon-delete">
+                <button mat-icon-button>
+                    <img src="../../../assets/create-black-18dp.svg" alt="" id={{contact.id}} (click)="update(contact.id, contact)">
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>

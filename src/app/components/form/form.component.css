@@ -1,0 +1,93 @@
+.form-background {
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 36px 400px;
+}
+
+/* Address Book Form header */
+.form-head {
+    display: flex;
+    justify-content: right;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    box-shadow: 2px 3px 6px #00000029;
+    border-radius: 7px 7px 0px 0px;
+    height: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.text-head {
+    text-align: left;
+    font: normal normal normal 28px/37px Roboto;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    width: 450px;
+    max-width: 100%;
+}
+.text-x {
+    color: #008CFF;
+    font: normal normal bold 30px/20px Roboto;
+    font-family: sans-serif;
+}
+
+/* Address Book Form data section */
+.form-div {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    border-radius: 0px 0px 8px 8px;
+    padding: 30px 100px;
+}
+
+.text {
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+}
+
+.input {
+    width: 560px;
+    max-width: 100%;
+}
+.input-first {
+    width: 240px;
+    padding-right: 30px;
+}
+.input-last {
+    width: 240px;
+}
+.csz-div {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.select {
+    width: 150px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+}
+.button {
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #969696;
+    opacity: 1;
+    width: 120px;
+    max-width: 100%;
+    margin: 20px 10px;
+}
+.text-add {
+    font: normal normal normal 20px/26px Roboto;
+    font-family: sans-serif;
+}
+.text-reset {
+    font: normal normal normal 20px/26px Roboto;
+    font-family: sans-serif;
+}

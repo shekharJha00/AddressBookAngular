@@ -1,0 +1,78 @@
+<div class="form-background">
+    <div class="form-head">
+        <span class="text-head">PERSON ADDRESS FORM</span>
+        <button class="button-close" routerLink="" color="" mat-mini-fab><span class="text-x">X</span></button>
+    </div>
+    <form class="form-div">
+        <div class="name-div">
+            <label class="text text-name">Name</label><br>
+            <mat-form-field class="input input-first">
+                <input type="text" name="Name" id="firstName" placeholder="Enter Your First Name" [(ngModel)]="personModel.firstName" matInput required>
+            </mat-form-field>
+            <mat-form-field class="input input-last">
+                <input type="text" name="Name" id="lastName" placeholder="Enter Your Last Name"[(ngModel)]="personModel.lastName" matInput required>
+            </mat-form-field>
+        </div>
+        <div class="phone-div">
+            <label class="text text-phone">Phone Number</label><br>
+            <mat-form-field class="input input-phone">
+                <input type="text" name="Phone" id="phoneNumber" placeholder="Enter Your Phone Number" [(ngModel)]="personModel.phoneNo" matInput required>
+            </mat-form-field>
+        </div>
+        <div class="email-div">
+            <label class="text text-email">Email ID</label><br>
+            <mat-form-field class="input input-email">
+                <input type="text" name="email" id="email" placeholder="Enter Your email Id" [(ngModel)]="personModel.email" matInput required>
+            </mat-form-field>
+        </div>
+        <div class="address-div">
+            <label class="text text-address">Address</label><br>
+            <mat-form-field class="input input-address">
+                <textarea type="text" name="Address" id="address" placeholder="Enter Your Address" [(ngModel)]="personModel.address" matInput required></textarea>
+            </mat-form-field>
+        </div>
+        <div class="csz-div">
+            <div class="city-div">
+                <label class="text text-city">City</label><br>
+                <mat-form-field  class="select select-city">
+                    <mat-label>Select City</mat-label>
+                    <select [(ngModel)]="personModel.city" [ngModelOptions]="{standalone: true}" matNativeControl required>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Raipur">Raipur</option>
+                    </select>
+                </mat-form-field>
+            </div>
+            <div class="state-div">
+                <label class="text text-state">State</label><br>
+                <mat-form-field class="select select-state">
+                    <mat-label>Select State</mat-label>
+                    <select [(ngModel)]="personModel.state" [ngModelOptions]="{standalone: true}" matNativeControl required>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </mat-form-field>
+            </div>
+            <div class="zip-div">
+                <label class="text text-zip">Zip Code</label><br>
+                <mat-form-field>
+                    <input class="input input-zip" name="Zip" id="zipCode" placeholder="Enter Your Zip Code" [(ngModel)]="personModel.pin" matInput required>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button button-add" mat-stroked-button (click)="onAdd()"><span class="text text-add">Add</span></button>
+            <button class="button button-reset" mat-stroked-button><span class="text text-reset">Reset</span></button>
+        </div>
+    </form>
+</div>
